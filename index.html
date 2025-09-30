@@ -7,35 +7,47 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
       line-height: 1.6;
       color: #333;
-    }
-    h1, h2, h3 {
-      color: #111;
-    }
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      background-color: #fafafa;
     }
     header {
+      text-align: center;
       margin-bottom: 2rem;
     }
     header h1 {
       margin-bottom: 0.2rem;
+      font-size: 2.2rem;
     }
     header p {
-      margin: 0.2rem 0;
+      margin: 0.3rem 0;
       font-size: 1rem;
       color: #555;
     }
+    nav {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
     }
     ul {
       margin: 0;
@@ -46,6 +58,8 @@
       padding-top: 1rem;
       font-size: 0.9rem;
       color: #555;
+      text-align: center;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -63,26 +77,44 @@
     </p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#service">Service</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am an Associate Teaching Professor and Associate Area Head of the Information Systems program at <strong>Carnegie Mellon University in Qatar (CMU-Q)</strong>. My research focuses on <strong>Natural Language Processing (NLP), Generative AI, and Arabic Dialect Processing</strong>, with a broader interest in building equitable AI systems for morphologically complex and low-resource languages.</p>
-    <p>I received my PhD in Computer Science (Computational Linguistics) from <strong>Université Paris-Sud 11</strong> in France. Over the past decade, I have led and collaborated on large-scale projects in <strong>Arabic NLP</strong>, including the <em>Qatar Linguistic Map</em>, the <em>MADAR project</em>, and the first <em>Automated Arabic Essay Scoring systems</em>.</p>
-    <p>I am also passionate about <strong>teaching and mentorship</strong>. At CMU-Q, I design and teach courses spanning application development, data science, and NLP, while supervising undergraduate and graduate theses.</p>
+    <p>I am an Associate Teaching Professor and Associate Area Head of the <a href="https://www.qatar.cmu.edu/is">Information Systems Department at CMU-Q</a>. I am also affiliated with the <a href="http://nlp.qatar.cmu.edu">Natural Language Processing Lab</a>, where I collaborate on Arabic NLP research with <a href="http://www.nizarhabash.com/">Nizar Habash</a> and <a href="https://www.andrew.cmu.edu/user/ko/">Kemal Oflazer</a>. My work bridges <strong>applied machine learning, natural language processing, and generative AI</strong>, with a special focus on Arabic dialects, low-resource languages, and educational technologies.</p>
+    <p>My area of research is <strong>Artificial Intelligence</strong>, specifically <strong>Natural Language Processing and Computational Linguistics</strong>. I primarily focus on <strong>Arabic and Arabic dialect processing</strong> across orthography, morphology, syntax, semantics, lexicons, and corpora. I also work on <strong>machine translation, dialogue systems, and multilingual AI</strong>. A strong theme in my research is using <strong>AI for social good</strong>, ensuring that technology contributes to equity, inclusion, and meaningful societal impact.</p>
+    <p>I earned my PhD in Computer Science (Computational Linguistics) from <strong><a href="http://www.u-psud.fr">Paris-Sud University</a></strong>, France, where I worked on paraphrase alignment under the supervision of <a href="http://perso.limsi.fr/anne/">Anne Vilnat</a> and <a href="http://perso.limsi.fr/amax/">Aurélien Max</a>. Before that, I completed my M.Sc. in Computer Science at the <strong><a href="http://www.u-pem.fr">Paris-Est Marne-La-Vallée University</a></strong> and my B.Sc. in Computer Science at the <strong><a href="http://www.uma.rnu.tn">University of Manouba</a></strong>, Tunisia.</p>
+    <p>I serve as the <strong>Secretary of SIGARAB</strong>, the ACL Special Interest Group for Arabic NLP, where I actively support the growth and cohesion of this community. I have also served as a <strong>Senior Area Chair</strong> for major international conferences, including <strong>ACL 2025, AAAI 2026, LREC 2026, and EACL 2026</strong>.</p>
+    <p>
+      📄 <a href="documents/cv-hbouamor.pdf">Curriculum Vitae »</a> &emsp; 
+      <a href="#">Research Statement »</a> &emsp;
+      <a href="https://tel.archives-ouvertes.fr/tel-00717702/document">Dissertation »</a>
+    </p>
   </section>
 
-  <section>
+  <section id="research">
     <h2>Research Interests</h2>
     <ul>
       <li>Natural Language Processing (NLP) & Generative AI</li>
       <li>Arabic dialect processing & low-resource languages</li>
       <li>Machine Translation (statistical & neural)</li>
+      <li>Dialogue Systems</li>
       <li>Automatic Essay Scoring & Educational AI</li>
       <li>Bias and Fairness in AI systems</li>
       <li>Applied Deep Learning for multilingual data</li>
+      <li>AI for Social Good</li>
     </ul>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Selected Projects</h2>
     <ul>
       <li><strong>Dimension-Specific Automated Scoring of Arabic Essays (2023–2026)</strong> – Developing the first automated multi-dimensional essay scoring system for Arabic writing proficiency.</li>
@@ -92,7 +124,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="publications">
     <h2>Recent Publications</h2>
     <ul>
       <li>Bouamor, H., Gongora-Svartzman, G., Heimann, L., Huang, S. (2025). <em>Evaluating GenAI’s Effectiveness for Students with Varied Programming Backgrounds in a Software Development Course</em>. SIGCSE TS 2025.</li>
@@ -103,7 +135,7 @@
     <p>📚 Full list: <a href="https://scholar.google.com/citations?hl=en&user=URT16pgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a></p>
   </section>
 
-  <section>
+  <section id="teaching">
     <h2>Teaching</h2>
     <p>Courses I regularly teach at CMU-Q:</p>
     <ul>
@@ -115,9 +147,14 @@
     <p>Upcoming (Fall 2025): <strong>67-341: Generative AI & Governance: Building Responsible Systems</strong></p>
   </section>
 
-  <section>
+  <section id="service">
     <h2>Service & Leadership</h2>
     <ul>
+      <li>Secretary of <strong>SIGARAB</strong> (ACL Special Interest Group for Arabic NLP)</li>
+      <li>Senior Area Chair, <em>ACL 2025</em></li>
+      <li>Senior Area Chair, <em>AAAI 2026</em></li>
+      <li>Senior Area Chair, <em>LREC 2026</em></li>
+      <li>Senior Area Chair, <em>EACL 2026</em></li>
       <li>Program Chair, <em>ArabicNLP 2024</em></li>
       <li>Program Chair, <em>EMNLP 2023</em></li>
       <li>General Chair, <em>WANLP 2022</em></li>
@@ -126,19 +163,14 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Honors & Awards</h2>
-    <ul>
-      <li>GAITAR Fellowship (2024) – Exploring GenAI in technical education.</li>
-      <li>Best Paper Award – IJCNLP 2013.</li>
-      <li>Anita Borg Institute Faculty Scholarship – Grace Hopper Conference (2015).</li>
-      <li>Full PhD Scholarship – Ministry of Higher Education and Research, France.</li>
-    </ul>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 CMU-Q, Education City, Doha, Qatar<br>
+    ✉️ <a href="mailto:hbouamor@cmu.edu">hbouamor@cmu.edu</a></p>
   </section>
 
   <footer>
-    <p>📍 CMU-Q, Education City, Doha, Qatar<br>
-    ✉️ <a href="mailto:hbouamor@cmu.edu">hbouamor@cmu.edu</a></p>
+    <p>© 2025 Houda Bouamor · Built with GitHub Pages</p>
   </footer>
 </body>
 </html>
