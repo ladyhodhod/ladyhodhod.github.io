@@ -66,6 +66,34 @@
       text-align: center;
       margin-top: 2rem;
     }
+    /* Style for blockquote quotes in the “Quotes I Like” section */
+    blockquote.custom-quote {
+      font-style: italic;
+      font-size: 1.15em;
+      line-height: 1.4;
+      margin: 1.5em 0; /* vertical space above & below */
+      padding-left: 1em;
+      border-left: 4px solid #6c757d;  /* dark grey bar on left */
+      color: #444; /* slightly lighter than default text for emphasis */
+      background-color: #f9f9f9; /* very light grey background */
+    }
+
+    blockquote.custom-quote:before {
+      content: ““”; /* left double quote mark */
+      font-size: 2em;
+      color: #6c757d;
+      vertical-align: top;
+      margin-right: 0.2em;
+    }
+
+    blockquote.custom-quote cite {
+      display: block;
+      margin-top: 0.5em;
+      text-align: right;
+      font-style: normal;
+      color: #6c757d;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
